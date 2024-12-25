@@ -1,0 +1,16 @@
+
+
+<h1>Welcome to Indian Tourism</h1>
+<app-carousel></app-carousel>
+<p>India, a captivating blend of ancient traditions and modern marvels, is a destination like no other. Known as the cradle of one of the world’s oldest civilizations, it boasts an unparalleled richness in history, culture, and natural beauty. From the majestic forts and palaces of Rajasthan to the tranquil backwaters of Kerala, every corner of India tells a unique story.
+
+    The country’s vibrant festivals, like Holi and Durga Puja, offer a glimpse into its joyous spirit, while its sacred sites, such as Varanasi’s ghats and the Golden Temple, provide moments of spiritual solace. Nature lovers can revel in the serene landscapes of Kashmir, the desert dunes of Thar, or the lush forests of the Western Ghats. With its diverse cuisine, colorful markets, and warm hospitality, India invites travelers to embark on a journey of discovery and leave with memories to cherish for a lifetime.</p>
+    <owl-carousel-o [options]="customOptions">
+
+        <ng-container *ngFor="let slide of cimages">
+          <ng-template carouselSlide [id]="slide.id.toString()">
+            <img [src]="slide.src" [alt]="slide.alt">
+          </ng-template>
+        </ng-container>
+    
+      </owl-carousel-o>
